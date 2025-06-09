@@ -1,0 +1,13 @@
+{
+  "name": "taskchain-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "agents"
+  ],
+  "scripts": {
+    "contracts": "cd contracts && npx hardhat test",
+    "agent": "cd agents && node agent.js",
+    "frontend": "cd frontend && npm start"
+  }
+} 
